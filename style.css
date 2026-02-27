@@ -1,7 +1,7 @@
 body {
     margin: 0;
     font-family: Arial, sans-serif;
-    background-color: #ff6961;
+    background-color: red !important;
 }
 
 /* Barre de navigation */
@@ -40,5 +40,6 @@ body {
     width: 100px;        /* taille fixe */
     height: auto;        /* garde les proportions */
 }
+
 
 
