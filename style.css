@@ -2,8 +2,8 @@
 body {
     margin: 0;
     font-family: 'Arial', sans-serif;
-    background-color: #1a1a1a; /* fond sombre pour harmonie avec Bugatti */
-    color: #eee;
+    background-color: #ffffff;
+    color: #222;
     line-height: 1.5;
 }
 
@@ -17,7 +17,7 @@ body {
 
 .center-img { 
     display: block; 
-    margin: 20px auto 0 auto; /* 20px au-dessus, centré horizontalement */ 
+    margin: 20px auto 0 auto;
 }
 
 /* === Navbar === */
@@ -25,11 +25,11 @@ body {
     list-style: none;
     margin: 0;
     padding: 0;
-    background-color: #111;
+    background-color: #f5f5f5;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.5);
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
 }
 
 .navbar li {
@@ -39,7 +39,7 @@ body {
 .navbar a {
     display: block;
     padding: 15px 25px;
-    color: #fff;
+    color: #222;
     text-decoration: none;
     font-weight: bold;
     transition: all 0.3s ease;
@@ -51,11 +51,10 @@ body {
 }
 
 /* === Formulaire === */
-/* === Formulaire centré et beau === */
 .form-container {
     display: flex;
     justify-content: center;
-    align-items: flex-start; /* changer flex-start pour que le formulaire commence en haut */
+    align-items: flex-start;
     padding: 40px 20px;
     min-height: calc(100vh - 150px);
 }
@@ -63,15 +62,15 @@ body {
 form {
     width: 100%;
     max-width: 500px;
-    background-color: #222;
+    background-color: #ffffff;
     padding: 30px;
     border-radius: 12px;
-    box-shadow: 0 8px 25px rgba(0,0,0,0.5);
-    color: #eee;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+    color: #222;
 }
 
 fieldset {
-    border: 1px solid #444;
+    border: 1px solid #ddd;
     padding: 20px;
     border-radius: 8px;
 }
@@ -79,28 +78,28 @@ fieldset {
 legend {
     font-weight: bold;
     font-size: 20px;
-    color: #00aaff;
+    color: #0047ff;
     margin-bottom: 20px;
 }
 
 label {
     display: block;
     margin-bottom: 8px;
-    color: #ccc;
+    color: #444;
     font-size: 14px;
 }
 
 input[type="text"],
 input[type="email"],
 textarea {
-    display: block; /* force chaque champ sur une ligne */
+    display: block;
     width: 100%;
     padding: 12px;
     margin-bottom: 20px;
     border-radius: 6px;
-    border: 1px solid #555;
-    background-color: #333;
-    color: #eee;
+    border: 1px solid #ccc;
+    background-color: #f9f9f9;
+    color: #222;
     box-sizing: border-box;
     font-size: 14px;
 }
@@ -115,7 +114,7 @@ input[type="submit"] {
     padding: 14px;
     border-radius: 6px;
     cursor: pointer;
-    background-color: #00aaff;
+    background-color: #0047ff;
     color: #fff;
     border: none;
     font-weight: bold;
@@ -124,7 +123,7 @@ input[type="submit"] {
 }
 
 input[type="submit"]:hover {
-    background-color: #00d4ff;
+    background-color: #007bff;
 }
 
 /* === Responsive === */
@@ -134,26 +133,27 @@ input[type="submit"]:hover {
     }
 }
 
+/* === Container === */
 .container {
     max-width: 1200px;
     margin: 30px auto;
     padding: 0 20px;
 }
 
-/* Page title */
+/* === Page title === */
 .pageTitle h2 {
     text-align: center;
-    color: #00aaff;
+    color: #0047ff;
     margin-bottom: 5px;
 }
 
 .pageTitle p {
     text-align: center;
     font-style: italic;
-    color: #ccc;
+    color: #666;
 }
 
-/* Card grid */
+/* === Card grid === */
 .specGrid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
@@ -161,59 +161,59 @@ input[type="submit"]:hover {
     margin-top: 30px;
 }
 
-/* Cards */
+/* === Cards === */
 .card {
-    background-color: #222;
+    background-color: #ffffff;
     border-radius: 12px;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+    box-shadow: 0 4px 15px rgba(0,0,0,0.15);
     padding: 20px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .card:hover {
     transform: translateY(-5px);
-    box-shadow: 0 8px 25px rgba(0,0,0,0.7);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.25);
 }
 
-/* Card headings */
+/* === Card headings === */
 .card h3 {
     margin-top: 0;
-    color: #00aaff;
-    border-bottom: 1px solid #444;
+    color: #0047ff;
+    border-bottom: 1px solid #ddd;
     padding-bottom: 8px;
 }
 
-/* Spec rows */
+/* === Spec rows === */
 .specRow {
     display: flex;
     justify-content: space-between;
-    align-items: center; /* aligne verticalement */
+    align-items: center;
     padding: 8px 0;
-    border-bottom: 1px solid #333;
+    border-bottom: 1px solid #eee;
 }
 
 .specRow span {
-    color: #ccc;
+    color: #555;
     text-align: left;
 }
 
 .specRow b {
-    color: #fff;
+    color: #222;
     text-align: right;
 }
 
-/* Notes box */
+/* === Notes box === */
 .noteBox {
-    background-color: #111;
-    border-left: 4px solid #00aaff;
+    background-color: #f5faff;
+    border-left: 4px solid #0047ff;
     padding: 10px 12px;
     font-size: 13px;
-    color: #aaa;
+    color: #555;
     margin-top: 12px;
     border-radius: 4px;
 }
 
-/* Buttons */
+/* === Buttons === */
 .btnRow {
     display: flex;
     gap: 10px;
@@ -245,18 +245,19 @@ input[type="submit"]:hover {
     background-color: #00d4ff;
 }
 
-/* Print styles */
+/* === Print styles === */
 @media print {
     .btnRow { display:none !important; }
-    .card { box-shadow:none; border-color:#ddd; }
+    .card { box-shadow:none; border:1px solid #ddd; }
     .specRow { border-top:1px solid #ddd; }
     a { text-decoration:none; color:#000; }
 }
 
+/* === Bugatti logo === */
 .bugatti-logo {
     width: 120px;
     height: auto;
     display: block;
     margin: 0 auto;
     padding: 20px;
-}   
+}
