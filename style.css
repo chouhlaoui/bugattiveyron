@@ -32,3 +32,10 @@ body {
     display: block;
     margin: 0 auto;
 }
+
+.logo-img {
+    display: block;
+    margin: 0 auto;
+    width: 300px;        /* taille fixe */
+    height: auto;        /* garde les proportions */
+}
