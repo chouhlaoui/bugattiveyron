@@ -51,19 +51,20 @@ body {
 }
 
 /* === Formulaire === */
+/* === Formulaire centré et beau === */
 .form-container {
     display: flex;
     justify-content: center;
-    align-items: center;
-    height: calc(100vh - 150px); /* espace pour navbar + logo */
-    padding: 20px;
+    align-items: flex-start; /* changer flex-start pour que le formulaire commence en haut */
+    padding: 40px 20px;
+    min-height: calc(100vh - 150px);
 }
 
 form {
     width: 100%;
-    max-width: 450px;
+    max-width: 500px;
     background-color: #222;
-    padding: 25px;
+    padding: 30px;
     border-radius: 12px;
     box-shadow: 0 8px 25px rgba(0,0,0,0.5);
     color: #eee;
@@ -71,29 +72,31 @@ form {
 
 fieldset {
     border: 1px solid #444;
-    padding: 15px;
+    padding: 20px;
     border-radius: 8px;
 }
 
 legend {
     font-weight: bold;
-    font-size: 18px;
+    font-size: 20px;
     color: #00aaff;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
 }
 
 label {
     display: block;
-    margin-bottom: 5px;
+    margin-bottom: 8px;
     color: #ccc;
+    font-size: 14px;
 }
 
 input[type="text"],
 input[type="email"],
 textarea {
+    display: block; /* force chaque champ sur une ligne */
     width: 100%;
-    padding: 10px;
-    margin-bottom: 15px;
+    padding: 12px;
+    margin-bottom: 20px;
     border-radius: 6px;
     border: 1px solid #555;
     background-color: #333;
@@ -103,19 +106,20 @@ textarea {
 }
 
 textarea {
-    min-height: 100px;
+    min-height: 120px;
     resize: vertical;
 }
 
 input[type="submit"] {
     width: 100%;
-    padding: 12px;
+    padding: 14px;
     border-radius: 6px;
     cursor: pointer;
     background-color: #00aaff;
     color: #fff;
     border: none;
     font-weight: bold;
+    font-size: 16px;
     transition: background-color 0.3s ease;
 }
 
